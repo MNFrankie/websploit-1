@@ -1,1 +1,25 @@
-index
+<h1 id="websploit">WebSploit</h1>
+<p>This is a virtual machine (VM) created by <a href="https://omarsantos.io">Omar Santos</a> for different (Cybersecurity Ethical Hacking (Web Penetration Testing) training sessions](https://theartofhacking.org). The purpose of this VM is to have a lightweight (single VM) with a few web application penetration testing tools, as well as vulnerable applications.</p>
+<h2 id="important">IMPORTANT!!!</h2>
+<p>This VM contains vulnerable software! DO NOT connect to a production environment and use with caution!!!</p>
+<h2 id="getting-started">Getting Started</h2>
+<ol type="1">
+<li><p>Download <a href="https://www.virtualbox.org">VirtualBox</a>. This is an all-in-one VM created and tested in <a href="https://www.virtualbox.org">VirtualBox</a>. VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use. For a thorough introduction to virtualization and VirtualBox, please refer to <a href="https://www.virtualbox.org/manual/ch01.html">the online version of the VirtualBox User Manual’s first chapter</a>.</p></li>
+<li><p><strong>Download the .ova file from http://h4cker.org/websploit</strong> and import it in VirtualBox. <a href="https://www.virtualbox.org/manual/ch01.html#ovf">Click here</a> for detailed instructions on how to import a VM in VirtualBox.</p></li>
+</ol>
+<h2 id="just-a-kali-linux-vm-with-vulnerable-applications">Just a Kali Linux VM with Vulnerable Applications</h2>
+<p>This is an all-in-one Kali + Vulnerable Applications standalone VM designed for you to practice your skills in a safe environment.</p>
+<h2 id="vulnerable-servers-included">Vulnerable Servers Included</h2>
+<ul>
+<li><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web Application (DVWA)</a></li>
+<li><a href="https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">WebGoat</a></li>
+<li><a href="https://github.com/rapid7/hackazon">Hackazon</a></li>
+</ul>
+<h3 id="all-of-the-vulnerable-servers-are-running-in-docker-containers">All of the vulnerable servers are running in Docker containers</h3>
+<p>All containers are configured to start at boot time. To obtain the status of each docker container use the <code>sudo docker ps</code> command.</p>
+<p>If they are not started use the following commands to start each container:</p>
+<pre><code>sudo docker start dvwa
+sudo docker start webgoat
+sudo docker start hackazon</code></pre>
+<p>If for some reason docker does not start at bootup use the following command to start it:</p>
+<pre><code>service docker start</code></pre>
