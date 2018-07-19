@@ -1,32 +1,81 @@
-<head>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js" integrity="sha384-CS0nxkpPy+xUkNGhObAISrkg/xjb3USVCwy+0/NMzd5VxgY4CMCyTkItmy5n0voC" crossorigin="anonymous"></script>
-</head>
+<!DOCTYPE html>
+<html lang="en">
 
-<h1 id="websploit">WebSploit</h1>
-<p>This is a virtual machine (VM) created by <a href="https://omarsantos.io">Omar Santos</a> for different (Cybersecurity Ethical Hacking (Web Penetration Testing) training sessions](https://theartofhacking.org). The purpose of this VM is to have a lightweight (single VM) with a few web application penetration testing tools, as well as vulnerable applications.</p>
-<h2 id="important">IMPORTANT!!!</h2>
-<p>This VM contains vulnerable software! DO NOT connect to a production environment and use with caution!!!</p>
-<h2 id="getting-started">Getting Started</h2>
-<ol type="1">
-<li><p>Download <a href="https://www.virtualbox.org">VirtualBox</a>. This is an all-in-one VM created and tested in <a href="https://www.virtualbox.org">VirtualBox</a>. VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use. For a thorough introduction to virtualization and VirtualBox, please refer to <a href="https://www.virtualbox.org/manual/ch01.html">the online version of the VirtualBox User Manual’s first chapter</a>.</p></li>
-<li><p><strong>Download the .ova file from <a href="http://h4cker.org/websploit">http://h4cker.org/websploit</strong> and import it in VirtualBox. <a href="https://www.virtualbox.org/manual/ch01.html#ovf">Click here</a> for detailed instructions on how to import a VM in VirtualBox.</p></li>
-</ol>
-<h2 id="just-a-kali-linux-vm-with-vulnerable-applications">Just a Kali Linux VM with Vulnerable Applications</h2>
-<p>This is an all-in-one Kali + Vulnerable Applications standalone VM designed for you to practice your skills in a safe environment.</p>
-<h2 id="vulnerable-servers-included">Vulnerable Servers Included</h2>
-<ul>
-<li><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web Application (DVWA)</a></li>
-<li><a href="https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">WebGoat</a></li>
-<li><a href="https://github.com/rapid7/hackazon">Hackazon</a></li>
-</ul>
-<h3 id="all-of-the-vulnerable-servers-are-running-in-docker-containers">All of the vulnerable servers are running in Docker containers</h3>
-<p>All containers are configured to start at boot time. To obtain the status of each docker container use the <code>sudo docker ps</code> command.</p>
-<p>If they are not started use the following commands to start each container:</p>
-<pre><code>sudo docker start dvwa
-sudo docker start webgoat
-sudo docker start hackazon</code></pre>
-<p>If for some reason docker does not start at bootup use the following command to start it:</p>
-<pre><code>service docker start</code></pre>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
+          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+          <ul class="list-unstyled">
+            <li>Bootstrap 4.1.1</li>
+            <li>jQuery 3.3.1</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
