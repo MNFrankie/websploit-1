@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Omar Santos">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>WebSploit</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,41 +33,59 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#">WebSploit</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+
+
       </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-          <ul class="list-unstyled">
-            <li>Bootstrap 4.1.1</li>
-            <li>jQuery 3.3.1</li>
+        <div class="col-lg-12 text-left">
+          <h1 class="mt-5">WebSploit</h1><br>
+          <p class="lead"><strong>IMPORTANT!!!</strong> <br>
+This VM contains vulnerable software! DO NOT connect to a production environment and use with caution!!!</p>
+
+<hr>
+
+<p>This is a virtual machine (VM) created by <a href="https://omarsantos.io">Omar Santos</a> for different (Cybersecurity Ethical Hacking (Web Penetration Testing) training sessions](https://theartofhacking.org). The purpose of this VM is to have a lightweight (single VM) with a few web application penetration testing tools, as well as vulnerable applications.</p>
+
+
+<h2 id="getting-started">Getting Started</h2>
+<ol type="1">
+<li><p>Download <a href="https://www.virtualbox.org">VirtualBox</a>. This is an all-in-one VM created and tested in <a href="https://www.virtualbox.org">VirtualBox</a>. VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use. For a thorough introduction to virtualization and VirtualBox, please refer to <a href="https://www.virtualbox.org/manual/ch01.html">the online version of the VirtualBox User Manual’s first chapter</a>.</p></li>
+<li><p><strong>Download the .ova file from <a href="http://h4cker.org/websploit">http://h4cker.org/websploit</strong> and import it in VirtualBox. <a href="https://www.virtualbox.org/manual/ch01.html#ovf">Click here</a> for detailed instructions on how to import a VM in VirtualBox.</p></li>
+</ol>
+<h2 id="just-a-kali-linux-vm-with-vulnerable-applications">Just a Kali Linux VM with Vulnerable Applications</h2>
+<p>This is an all-in-one Kali + Vulnerable Applications standalone VM designed for you to practice your skills in a safe environment.</p>
+<h2 id="vulnerable-servers-included">Vulnerable Servers Included</h2>
+<ul>
+<li><a href="http://www.dvwa.co.uk/">Damn Vulnerable Web Application (DVWA)</a></li>
+<li><a href="https://www.owasp.org/index.php/Category:OWASP_WebGoat_Project">WebGoat</a></li>
+<li><a href="https://github.com/rapid7/hackazon">Hackazon</a></li>
+</ul>
+<h3 id="all-of-the-vulnerable-servers-are-running-in-docker-containers">All of the vulnerable servers are running in Docker containers</h3>
+<p>All containers are configured to start at boot time. To obtain the status of each docker container use the <code>sudo docker ps</code> command.</p>
+<p>If they are not started use the following commands to start each container:</p>
+<pre><code>sudo docker start dvwa
+sudo docker start webgoat
+sudo docker start hackazon</code></pre>
+<p>If for some reason docker does not start at bootup use the following command to start it:</p>
+<pre><code>service docker start</code></pre>
+
+
+<h2>Additional References:</h2>
+
+<ul class="list-unstyled">
+            <li><a href="https://theartofhacking.org" target="_blank">The Art of Hacking Website</a></li>
+            <li><a href="https://theartofhacking.org/github" target="_blank">The Art of Hacking GitHub Repository</a></li>
           </ul>
+
+
         </div>
       </div>
     </div>
